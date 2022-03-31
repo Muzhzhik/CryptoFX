@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cryptofx.CryptoController">
+   <children>
+      <Pane layoutX="206.0" layoutY="41.0" prefHeight="334.0" prefWidth="376.0" style="-fx-background-color: E2E2E2;">
+         <children>
+            <TextField fx:id="filepath1" layoutX="30.0" layoutY="55.0" prefHeight="25.0" prefWidth="239.0" promptText="C:\test.txt" />
+            <TextField fx:id="keyForEncDec" layoutX="30.0" layoutY="115.0" prefHeight="27.0" prefWidth="316.0" promptText="5" />
+            <Label fx:id="fileNameLaber" layoutX="30.0" layoutY="27.0" prefHeight="17.0" prefWidth="70.0" text="File path:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="keyLabel" layoutX="30.0" layoutY="88.0" text="Key:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="startButton" layoutX="214.0" layoutY="240.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="132.0" text="Start" />
+            <TextField fx:id="filePath2" layoutX="30.0" layoutY="115.0" prefHeight="27.0" prefWidth="239.0" promptText="C:\test.txt (not encrypted)" />
+            <Label fx:id="fileForAnaluseLabel" layoutX="29.0" layoutY="88.0" text="File for analyse:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="isSaveResult" layoutX="29.0" layoutY="240.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="159.0" text="Save result to file" />
+            <TextField fx:id="newFileName" layoutX="25.0" layoutY="273.0" prefHeight="25.0" prefWidth="167.0" promptText="File name" />
+            <Button fx:id="chooseFilePath1" layoutX="280.0" layoutY="55.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="choose" />
+            <Button fx:id="chooseFilePath2" layoutX="280.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="choose" />
+         </children>
+      </Pane>
+      <Pane layoutX="13.0" layoutY="41.0" prefHeight="334.0" prefWidth="189.0" style="-fx-background-color: E2E2E2;">
+         <children>
+            <Button fx:id="encrypt_button" layoutX="23.0" layoutY="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Encrypt" />
+            <Button fx:id="decrypt_buttor" layoutX="23.0" layoutY="60.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Decrypt" />
+            <Button fx:id="brutforce_button" layoutX="23.0" layoutY="97.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Brut force" />
+            <Button fx:id="cryptoanalysis_button" layoutX="23.0" layoutY="136.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Crypto analysis" />
+            <Button fx:id="exit_button" layoutX="24.0" layoutY="295.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" text="Exit" />
+            <Label fx:id="encrypt_laber" layoutX="168.0" layoutY="26.0" prefHeight="20.0" prefWidth="15.0" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="decrypt_laber" layoutX="168.0" layoutY="63.0" prefHeight="20.0" prefWidth="15.0" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="brutforce_laber" layoutX="168.0" layoutY="100.0" prefHeight="20.0" prefWidth="15.0" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cryptoanalyse_laber" layoutX="168.0" layoutY="139.0" prefHeight="20.0" prefWidth="15.0" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="warning_message_label" layoutX="206.0" layoutY="14.0" prefHeight="17.0" prefWidth="376.0" text="Label" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
